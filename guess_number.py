@@ -1,0 +1,18 @@
+print("Guessing a fixed number within the range of 0 to 100")
+a = 53
+attempt = 0
+b = 0
+
+
+while a != b:
+  attempt = attempt + 1  
+  b = int(input())
+  if b < a:
+    print("Attempt", attempt, ":", b)
+    print("Too little")
+  else:
+    if a < b:
+      print("Attempt", attempt, ":", b)
+      print("Too big")
+    else:
+      print("Brawo! You guessed the number after", attempt, "attemps")
